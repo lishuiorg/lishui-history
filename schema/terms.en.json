@@ -1,0 +1,67 @@
+{
+  "$comment": "溧水历史志枚举取值英文对照表。取值表（enums.json、tags.json）里的中文取值在英文页上要翻成英文，译法集中记在这里，站点层不再各写一份。查词顺序：glossary.csv（专名）优先，本表次之。注意「桥梁」「纪念地」「摘录」「考据」「全国重点文物保护单位」在多个分组里重复出现，同形不同义时以本文件的分组顺序为准，先出现的生效。",
+  "placeType": {
+    "古迹": "Historic site",
+    "遗址": "Archaeological site",
+    "墓葬": "Tomb",
+    "石刻": "Stone inscription",
+    "桥梁": "Bridge",
+    "寺庙": "Temple",
+    "水系": "Waterway",
+    "山体": "Mountain",
+    "村落": "Village",
+    "纪念地": "Memorial site"
+  },
+  "protectionLevel": {
+    "全国重点文物保护单位": "Major Historical and Cultural Site Protected at the National Level",
+    "江苏省文物保护单位": "Cultural Relic Site Protected at the Provincial Level of Jiangsu",
+    "南京市文物保护单位": "Cultural Relic Site Protected at the Municipal Level of Nanjing",
+    "溧水区文物保护单位": "Cultural Relic Site Protected at the District Level of Lishui",
+    "未定级不可移动文物": "Unranked immovable cultural relic"
+  },
+  "genre": {
+    "沿革": "Administrative history",
+    "考据": "Textual criticism",
+    "摘录": "Selections",
+    "综述": "Survey"
+  },
+  "dynasty": {
+    "隋": "Sui",
+    "唐": "Tang",
+    "宋": "Song",
+    "元": "Yuan",
+    "明": "Ming",
+    "清": "Qing",
+    "民国": "Republic of China",
+    "当代": "Contemporary"
+  },
+  "tag": {
+    "建置沿革": "Administrative history",
+    "行政区划": "Administrative divisions",
+    "县制": "County system",
+    "水利": "Water conservancy",
+    "漕运": "Grain transport",
+    "运河": "Canal",
+    "考古": "Archaeology",
+    "古人类": "Early humans",
+    "旧志": "Old gazetteers",
+    "文献": "Documents",
+    "摘录": "Selections",
+    "考据": "Textual criticism",
+    "纪年": "Chronology",
+    "撤县设区": "County to district",
+    "置县": "Founding of the county",
+    "隋代": "Sui",
+    "明代": "Ming",
+    "当代": "Contemporary",
+    "近现代": "Modern",
+    "抗战": "War of Resistance",
+    "文物古迹": "Heritage sites",
+    "桥梁": "Bridges",
+    "洞穴遗址": "Cave sites",
+    "纪念地": "Memorial sites",
+    "新四军": "New Fourth Army",
+    "全国重点文物保护单位": "National-level protected site",
+    "省级文保": "Provincial-level protected site"
+  }
+}

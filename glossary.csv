@@ -1,0 +1,106 @@
+zh,en,category,note
+溧水,Lishui,地名,必须与浙江丽水（Lishui, Zhejiang）区分，英文行文统一写 Lishui, Nanjing 或 Lishui District
+溧水区,Lishui District,行政区划,首次出现用全称，后文可用 the district
+溧水县,Lishui County,行政区划,2013 年撤县设区前的县制名称
+溧水州,Lishui Zhou,行政区划,元代由县升州，英文保留州制音译 Zhou 并附 prefecture 说明
+蒋州,Jiangzhou,行政区划,隋代州名
+丹阳郡,Danyang Commandery,行政区划,隋代郡名
+升州,Shengzhou,行政区划,唐代州名
+江宁府,Jiangning Prefecture,行政区划,宋、清府名
+建康府,Jiankang Prefecture,行政区划,南宋府名
+集庆路,Jiqing Circuit,行政区划,元代路名，英文用 Circuit 表示路
+应天府,Yingtian Prefecture,行政区划,明代府名
+镇江专区,Zhenjiang Prefecture,行政区划,1949 年后行政督察区名
+溧阳县,Liyang County,行政区划,隋置溧水县时析出的来源县
+永阳街道,Yongyang Subdistrict,行政区划,通名 Subdistrict，其余街道同理
+柘塘街道,Zhetang Subdistrict,行政区划,
+东屏街道,Dongping Subdistrict,行政区划,
+洪蓝街道,Honglan Subdistrict,行政区划,
+石湫街道,Shiqiu Subdistrict,行政区划,
+白马镇,Baima Town,行政区划,通名 Town，其余镇同理
+和凤镇,Hefeng Town,行政区划,
+晶桥镇,Jingqiao Town,行政区划,
+石头寨村,Shitouzhai Village,行政区划,通名 Village
+梅梁渡,Meiliang Ferry,地名,明代漕运仓迁此，后改称仓口
+仓口,Cangkou,地名,由梅梁渡改称，因漕运仓得名
+秦淮河,Qinhuai River,水系,通行英文名，不写作 Qinhuai He
+胭脂河,Yanzhi River,水系,专名音译 + 通名意译
+石臼湖,Shijiu Lake,湖泊,专名音译 + Lake
+天生桥,Tiansheng Bridge,古迹,不意译为 Natural Bridge，避免与自然景观混淆
+胭脂岗,Yanzhi Hill,山体,开凿胭脂河的山岗
+蒲塘桥,Putang Bridge,古迹,明代石拱桥
+长乐桥,Changle Bridge,古迹,宋代石拱桥
+永寿寺塔,Yongshou Temple Pagoda,古迹,通名 Pagoda
+无想山,Wuxiang Mountain,山体,山名音译 + Mountain
+无想寺,Wuxiang Temple,寺庙,
+韩熙载读书台,Han Xizai's Reading Terrace,古迹,人名音译 + 意译的读书台
+红色李巷,Lixiang Revolutionary Site,纪念地,「红色」意译为 Revolutionary，李巷音译
+新四军,New Fourth Army,机构,通行英文名
+《溧水县志》,Lishui County Gazetteer,文献,书名意译；具体版本写作 Lishui County Gazetteer (Shunzhi edition)
+《万历溧水县志》,Lishui County Gazetteer (Wanli edition),文献,明代版本
+《顺治溧水县志》,Lishui County Gazetteer (Shunzhi edition),文献,清顺治十五年刻本
+《康熙溧水县志》,Lishui County Gazetteer (Kangxi edition),文献,
+《乾隆溧水县志》,Lishui County Gazetteer (Qianlong edition),文献,
+《光绪溧水县志》,Lishui County Gazetteer (Guangxu edition),文献,清光绪年间刻本
+隋,Sui,朝代,通行英文朝代名，不音译
+唐,Tang,朝代,
+宋,Song,朝代,
+元,Yuan,朝代,
+明,Ming,朝代,
+清,Qing,朝代,
+民国,Republic of China,朝代,时间段表述用 the Republican period
+当代,Contemporary,朝代,时间段表述用 since 1949
+明代,Ming dynasty,朝代,条目 era 字段的取值
+抗战时期,the War of Resistance period,时期,条目 era 字段的取值
+明洪武年间,Hongwu period of the Ming,年号,条目 era 字段的取值
+康熙年间,the Kangxi period,年号,条目 era 字段的取值
+洪武二十六年,the twenty-sixth year of the Hongwu era,年号,公元 1393 年；条目 time.era 的取值
+开皇十一年,the eleventh year of the Kaihuang era,年号,必须补公元年份，写作 the eleventh year of the Kaihuang era (591 CE)
+洪武,the Hongwu era,年号,
+元贞元年,the first year of the Yuanzhen era,年号,
+隆庆,the Longqing era,年号,
+会昌四年,the fourth year of the Huichang era,年号,
+崇山侯,Marquis of Chongshan,职官,爵位意译
+知县,zhixian (county magistrate),职官,先音译再补职掌说明，不硬套英国官职
+漕运,grain transport,制度,专指漕粮运输
+县志,county gazetteer,文献,通名意译
+文物保护单位,protected cultural relic site,制度,级别见 protection_level 取值表
+全国重点文物保护单位,Major Historical and Cultural Site Protected at the National Level,制度,英文用官方通行译法
+江苏省文物保护单位,Cultural Relic Site Protected at the Provincial Level of Jiangsu,制度,
+高淳,Gaochun,行政区划,明代析溧水西南境置高淳县，与溧水分治
+会稽郡,Kuaiji Commandery,行政区划,秦郡名
+鄣郡,Zhang Commandery,行政区划,秦汉郡名
+宣州,Xuanzhou,行政区划,唐代州名
+扬州,Yangzhou,行政区划,唐代州名
+江宁郡,Jiangning Commandery,行政区划,唐肃宗至德二载置
+永安县,Yong'an County,行政区划,六朝析置县，与今福建永安无关
+永世县,Yongshi County,行政区划,六朝析置县
+平陵县,Pingling County,行政区划,六朝析置县
+广通镇,Guangtong,地名,明代胭脂河沿线置闸处
+洪蓝埠,Honglan Wharf,地名,胭脂河南端入石臼湖处
+固城湖,Gucheng Lake,湖泊,胭脂河配套闸坝涉及的湖泊
+丹阳湖,Danyang Lake,湖泊,
+回峰山,Huifeng Mountain,山体,神仙洞遗址所在，山名音译 + Mountain
+神仙洞,Shenxian Cave,遗址,回峰山石灰岩溶洞遗址
+魏家村土墩墓群,Weijiacun Mound Tombs,墓葬,第七批江苏省文物保护单位
+苏南行政公署,Southern Jiangsu Administrative Office,机构,1949 年后苏南行政区机构
+中共苏皖区委,CPC Jiangsu-Anhui Regional Committee,机构,抗战时期苏南党组织
+新四军第六师十六旅,"16th Brigade, 6th Division, New Fourth Army",机构,番号照录，不简化
+《苏南施政纲领》,Administrative Programme for Southern Jiangsu,文献,书名意译
+塘马战斗,Tangma Battle,事件,1941 年 11 月，此后苏南领导机关移驻李巷
+苏南小延安,"the Little Yan'an of southern Jiangsu",地名,史学界称法，英文加引号并标明为转述
+陈毅,Chen Yi,人名,
+江渭清,Jiang Weiqing,人名,
+钟国楚,Zhong Guochu,人名,
+徐良彦,Xu Liangyan,人名,明万历年间溧水知县
+李新,Li Xin,人名,崇山侯，督凿胭脂河
+潘振,Pan Zhen,人名,宋建炎三年溧水县尉，守城死
+贺一桂,He Yigui,人名,明隆庆元年溧水知县
+达鲁花赤,darughachi,职官,元代监临官，音译后补一句说明
+知州,prefect,职官,州级长官；元代达鲁花赤位在其上
+次畿,ciji (secondary metropolitan county),制度,宋代县等，音译后补说明
+全国乡村旅游重点村,National Key Rural Tourism Village,制度,文旅部评定称号
+4A 级旅游景区,4A-rated tourist attraction,制度,旅游景区质量等级
+国家级水利风景区,National Water Conservancy Scenic Area,制度,水利部评定称号
+年号通用式,the Nth year of the X era (Y CE),规则,年号保留音译并补公元年份；N 用英文序数词，X 用年号音译，Y 为公元年份
+街镇通名,Town / Subdistrict,规则,镇用 Town，街道用 Subdistrict，村用 Village

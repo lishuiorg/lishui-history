@@ -1,0 +1,27 @@
+---
+id: src:njls-qqjj
+type: gov
+title: 溧水区人民政府网站「区情简介」
+titleEn: Lishui District People's Government — District Overview
+rights: gov-open
+archive: link
+publisher: 南京市溧水区人民政府
+publisherEn: People's Government of Lishui District, Nanjing
+url: http://www.njls.gov.cn/zjls/qqjj/
+accessed: 2026-09-25
+locator_hint: 页面段落
+note: >-
+  一级来源，用于文物遗存总述与红色李巷的权威表述。文中对文物遗存的列举可作线索，
+  具体级别与批次必须回到文保名录核对（见 src:nanjing-guobao-minglu、src:jiangsu-shengbao-minglu）。
+---
+
+## 关键表述
+
+- 境内有南朝四百八十寺之一的无想寺、无想山摩崖石刻、天生桥、胭脂河、长乐桥、蒲塘桥、永寿塔、驸马墓等众多文物遗址。
+- 境内文化古迹众多，拥有廻峰山古人类化石遗址、无想寺、南唐韩熙载读书台等人文景观。
+- 因地处胭脂岗，取名胭脂河。开凿胭脂河时，有一天然巨石凌空而架，横跨在两岸峭壁之上。
+- 李巷村是全国乡村旅游重点村，位于溧水白马镇石头寨社区。抗战时期，这里是中共苏皖区委、苏南行政公署、新四军第六师十六旅等苏南党政军首脑机关驻地，是苏南抗战指挥中心，被史学界称为「苏南小延安」。
+
+## 使用注意
+
+「苏南小延安」是史学界的称法，引用时须标明是转述，不作为本站的评价性表述。

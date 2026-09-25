@@ -1,0 +1,16 @@
+{
+  "name": "lishui-history",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "溧水历史志内容库。来源层与成果层两层结构，中英双语成对。",
+  "scripts": {
+    "validate": "node scripts/validate.mjs"
+  },
+  "dependencies": {
+    "lishui-kit": "file:../lishui-kit"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

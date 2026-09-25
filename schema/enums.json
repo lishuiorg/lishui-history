@@ -1,0 +1,25 @@
+{
+  "$comment": "溧水历史志取值表。内容 front-matter 中的枚举字段只能取本文件列出的值；新增取值必须先改这里，再改校验脚本。共享底座 lishui-kit 落地后，本文件由底座统一维护，各分站只声明自己用到的子集。",
+  "site": {
+    "id": "lishui-history",
+    "host": "lishi.lishui.org",
+    "name": "溧水历史志",
+    "nameEn": "Lishui History",
+    "domain": "lishui.org"
+  },
+  "types": ["event", "place", "article"],
+  "langs": ["zh", "en"],
+  "dynasty": ["隋", "唐", "宋", "元", "明", "清", "民国", "当代"],
+  "precision": ["year", "decade", "century", "unknown"],
+  "depth": ["stub", "standard", "full"],
+  "status": ["draft", "review", "published"],
+  "confidence": ["high", "medium", "low"],
+  "rights": ["public-domain", "gov-open", "excerpt-only", "link-only", "permission-required"],
+  "archive": ["fulltext", "link-registered", "catalogued-only", "excerpt", "link"],
+  "sourceType": ["gazetteer", "epigraphy", "archive", "gov", "heritage-list", "academic", "media", "fieldwork"],
+  "placeType": ["古迹", "遗址", "墓葬", "石刻", "桥梁", "寺庙", "水系", "山体", "村落", "纪念地"],
+  "genre": ["沿革", "考据", "摘录", "综述"],
+  "protectionLevel": ["全国重点文物保护单位", "江苏省文物保护单位", "南京市文物保护单位", "溧水区文物保护单位", "未定级不可移动文物"],
+  "idPattern": "^ls:(event|place|article):[a-z0-9]+(-[a-z0-9]+)*$",
+  "sourceIdPattern": "^src:[a-z0-9]+(-[a-z0-9]+)*$"
+}

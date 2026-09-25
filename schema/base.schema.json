@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lishi.lishui.org/schema/base.schema.json",
+  "title": "溧水知识站群基础内容 schema —— 历史志子集",
+  "description": "共享底座基础 schema 在本分站实际用到的字段子集。九类实体中历史志只用 event / place / article 三类，person 仅作为 related 的引用目标出现，不单独建条。本文件是字段契约文档，执行实现见 scripts/validate.mjs；共享底座 lishui-kit 落地后本文件改为对底座的引用。",
+  "type": "object",
+  "required": ["id", "type", "lang", "site", "title", "summary", "status", "depth", "sources", "updated"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "条目唯一标识，格式 ls:<类型>:<英文短名>。与语言无关，中英两份文件共用同一个 ID；发布后不再更改。",
+      "pattern": "^ls:(event|place|article):[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["event", "place", "article"]
+    },
+    "lang": {
+      "type": "string",
+      "enum": ["zh", "en"],
+      "description": "本文件的语言。中文稿在 content/ 下，英文稿在 content/en/ 下的对称路径。"
+    },
+    "site": {
+      "type": "string",
+      "const": "lishui-history"
+    },
+    "title": { "type": "string", "minLength": 2 },
+    "subtitle": { "type": "string" },
+    "summary": {
+      "type": "string",
+      "minLength": 10,
+      "description": "一到两句话的内容摘要，用于列表页与搜索结果。中文 40 至 90 字，英文 15 至 45 词。"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "标签必须取自共享底座的标签表，不得自造近义标签。"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "review", "published"],
+      "description": "只有 published 条目会进入站点。published 要求中英成对且来源齐全。"
+    },
+    "verified": {
+      "type": "boolean",
+      "description": "是否已由第二人核对来源。单人维护阶段可为 false，但不得因此提高 confidence。"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"],
+      "description": "对内容可靠性的判断。来源互相矛盾或换算存疑时降级，并在正文写明。"
+    },
+    "depth": {
+      "type": "string",
+      "enum": ["stub", "standard", "full"],
+      "description": "stub 为骨架条目，只保证字段与来源完整；standard 为常规条目；full 为考据充分的长条目。"
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "description": "来源引用，指向 sources/ 下的来源记录。无来源的内容不得置为 published。",
+      "items": {
+        "type": "object",
+        "required": ["ref"],
+        "additionalProperties": false,
+        "properties": {
+          "ref": { "type": "string", "pattern": "^src:[a-z0-9]+(-[a-z0-9]+)*$" },
+          "locator": {
+            "type": "string",
+            "description": "具体位置，如卷次页码、名录批次、页面访问日期。摘录类来源必须填写。"
+          },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "related": {
+      "type": "array",
+      "description": "关联条目 ID。事件与古迹之间的互链靠这里维持，跨站 ID 直接写目标站点的 ID。",
+      "items": { "type": "string", "pattern": "^ls:[a-z]+:[a-z0-9]+(-[a-z0-9]+)*$" }
+    },
+    "updated": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    }
+  },
+  "$defs": {
+    "time": {
+      "type": "object",
+      "description": "时间字段。时间轴排序只认 start / end，era 仅供展示与考据引用。",
+      "required": ["start", "precision"],
+      "additionalProperties": false,
+      "properties": {
+        "start": { "type": "integer", "description": "起始公元年份，公元前用负数。" },
+        "end": { "type": "integer", "description": "结束公元年份，单年事件可省略。" },
+        "dynasty": { "type": "string", "enum": ["隋", "唐", "宋", "元", "明", "清", "民国", "当代"] },
+        "era": { "type": "string", "description": "年号与纪年原文，如「开皇十一年」。仅作展示，不参与排序。" },
+        "precision": { "type": "string", "enum": ["year", "decade", "century", "unknown"] },
+        "approx": { "type": "boolean", "description": "年份为估算值时置 true，页面会加「约」标记。" }
+      }
+    },
+    "event": {
+      "type": "object",
+      "required": ["time", "outcome"],
+      "properties": {
+        "time": { "$ref": "#/$defs/time" },
+        "place_ref": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^ls:place:[a-z0-9]+(-[a-z0-9]+)*$" },
+          "description": "事件发生地，指向 place 条目。地点条目未建时留空，不得填自由文本。"
+        },
+        "outcome": { "type": "string", "description": "结果与影响，一到两句。" }
+      }
+    },
+    "place": {
+      "type": "object",
+      "required": ["place_type", "era"],
+      "properties": {
+        "place_type": { "type": "string", "enum": ["古迹", "遗址", "墓葬", "石刻", "桥梁", "寺庙", "水系", "山体", "村落", "纪念地"] },
+        "era": { "type": "string", "description": "年代表述，如「明洪武年间」。与 time 字段并存时以 time 为准。" },
+        "protection_level": {
+          "type": "string",
+          "enum": ["全国重点文物保护单位", "江苏省文物保护单位", "南京市文物保护单位", "溧水区文物保护单位", "未定级不可移动文物"]
+        },
+        "protection_batch": {
+          "type": "string",
+          "description": "公布批次与年份，如「第六批，2006 年」。填写 protection_level 时必填。"
+        },
+        "address": { "type": "string" },
+        "coordinates": {
+          "type": "object",
+          "required": ["lat", "lng"],
+          "additionalProperties": false,
+          "properties": {
+            "lat": { "type": "number", "minimum": 31.0, "maximum": 32.0 },
+            "lng": { "type": "number", "minimum": 118.5, "maximum": 119.5 }
+          },
+          "description": "WGS84 坐标。历史志只做粗定位，精确到百米即可。"
+        }
+      }
+    },
+    "article": {
+      "type": "object",
+      "required": ["genre"],
+      "properties": {
+        "genre": { "type": "string", "enum": ["沿革", "考据", "摘录", "综述"] },
+        "period": { "type": "string", "description": "所涉时段，如「隋至清」。自由文本，用于长文归档。" },
+        "citations": {
+          "type": "array",
+          "description": "逐条引文登记，摘录类长文必须逐条登记卷次页码。",
+          "items": {
+            "type": "object",
+            "required": ["ref", "locator"],
+            "additionalProperties": false,
+            "properties": {
+              "ref": { "type": "string", "pattern": "^src:[a-z0-9]+(-[a-z0-9]+)*$" },
+              "locator": { "type": "string" },
+              "quote": { "type": "string", "description": "引文原文，仅限公有领域来源。" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

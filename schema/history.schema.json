@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lishi.lishui.org/schema/history.schema.json",
+  "title": "溧水历史志附加约束",
+  "description": "在基础 schema 之上叠加的历史志特有约束。本文件是契约文档，执行实现见 scripts/validate.mjs。主规划 8.1 节要求的四项附加校验对应本文件中的 time 必填、年代区间、朝代取值、文保批次四条。",
+  "allOf": [{ "$ref": "base.schema.json" }],
+  "constraints": {
+    "timeRequired": {
+      "appliesTo": ["event"],
+      "rule": "event 必须有 time.start 与 time.precision",
+      "failure": "block"
+    },
+    "eraRange": {
+      "minYear": 591,
+      "maxYear": "current",
+      "rule": "年份落在 591 年至今区间内；早于置县年份的条目必须在正文说明依据",
+      "failure": "warn"
+    },
+    "dynastyEnum": {
+      "appliesTo": ["event"],
+      "rule": "time.dynasty 必须取自 schema/enums.json 的 dynasty 取值表",
+      "failure": "block"
+    },
+    "protectionBatch": {
+      "appliesTo": ["place"],
+      "rule": "place.protection_level 若填写，必须同时填写 place.protection_batch",
+      "failure": "block"
+    }
+  },
+  "siteRules": {
+    "entityScope": {
+      "allowed": ["event", "place", "article"],
+      "excluded": ["person"],
+      "note": "人物不单独建条，只在 related 中引用人物志的条目 ID。"
+    },
+    "idNaming": {
+      "event": "朝代或年号 + 主题，如 ls:event:sui-zhixian-591、ls:event:ming-yanzhihe",
+      "article": "主题词，如 ls:article:jianxian-yange、ls:article:shunzhi-lishuixianzhi-zhaiyi",
+      "place": "地名短名，如 ls:place:tianshengqiao"
+    },
+    "bilingual": {
+      "pairing": "published 条目必须中英成对，共用同一个 ID；缺任一份则两份都不得发布。",
+      "enPath": "content/en/<类型复数>/<短名>.md",
+      "enFieldsDiffer": ["lang", "title", "subtitle", "summary", "body"],
+      "enLengthRatio": "英文稿篇幅通常为中文稿的 70% 至 80%，第 1 期允许以 stub 起步，但不允许缺稿或留空。"
+    },
+    "glossary": {
+      "file": "glossary.csv",
+      "rule": "英文稿中的专名必须与 glossary.csv 一致；CI 校验专名一致性。"
+    }
+  }
+}

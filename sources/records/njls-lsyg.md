@@ -1,0 +1,30 @@
+---
+id: src:njls-lsyg
+type: gov
+title: 溧水区人民政府网站「历史沿革」
+titleEn: Lishui District People's Government — Historical Evolution
+rights: gov-open
+archive: link
+publisher: 南京市溧水区人民政府
+publisherEn: People's Government of Lishui District, Nanjing
+url: http://www.njls.gov.cn/zjls/lsyg/
+accessed: 2026-09-25
+locator_hint: 页面段落标题，如「历史沿革」
+note: >-
+  一级来源。置县时间、历代隶属、撤县设区、解放后区划调整等主干事实以本页表述为准。
+  政府页面会改版，引用时须记访问日期；转载需注明出处，不得改动原意。
+---
+
+## 关键表述
+
+- 隋朝开皇十一年（591 年）析溧阳西北境及丹阳（今江宁小丹阳）故地东部置溧水县，此为溧水建县之始。
+- 元朝元贞元年（1295 年）升溧水县为溧水州，属集庆路。
+- 明朝洪武二年（1369 年）改溧水州为溧水县，属应天府。
+- 清朝时期，溧水属江宁府。
+- 1949 年 4 月 25 日，溧水实行区建制，属苏南行政公署镇江专区。
+- 1983 年 3 月，溧水县由镇江专区划回南京市管辖。
+- 2013 年 2 月，经省政府批复同意：撤销溧水县，设立南京市溧水区，以原溧水县的行政区域为南京市溧水区的行政区域。
+
+## 使用注意
+
+本页对民国时期隶属表述较略，涉及民国部分需与地方志资料交叉核对，不得只据本页下结论。
