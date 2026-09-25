@@ -116,7 +116,7 @@
       "type": "object",
       "required": ["place_type", "era"],
       "properties": {
-        "place_type": { "type": "string", "enum": ["古迹", "遗址", "墓葬", "石刻", "桥梁", "寺庙", "水系", "山体", "村落", "纪念地"] },
+        "place_type": { "type": "string", "enum": ["古迹", "遗址", "墓葬", "石刻", "桥梁", "寺庙", "古塔", "水系", "山体", "村落", "纪念地"] },
         "era": { "type": "string", "description": "年代表述，如「明洪武年间」。与 time 字段并存时以 time 为准。" },
         "protection_level": {
           "type": "string",

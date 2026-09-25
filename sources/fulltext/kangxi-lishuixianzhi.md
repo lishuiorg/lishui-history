@@ -5,8 +5,8 @@ title: 康熙《溧水县志》
 titleEn: Lishui County Gazetteer (Kangxi edition)
 rights: public-domain
 archive: link-registered
-publisher: 清康熙年间刻本，十一卷加卷首一卷
-publisherEn: Kangxi-period woodblock edition, 11 juan plus 1 prefatory juan
+publisher: 清康熙十六年（1677）刻本，十一卷加卷首一卷；刘登科修，程之望、谢文运、王芝藻等纂
+publisherEn: Woodblock edition of 1677 (the sixteenth year of the Kangxi era), 11 juan plus 1 prefatory juan; revised by Liu Dengke, compiled by Cheng Zhiwang, Xie Wenyun, Wang Zhizao and others
 url: https://www.diancang.xyz/tianwendili/20695/375896.html
 accessed: 2026-09-25
 locator_hint: 卷次 + 纲目，如「卷之一·邑纪」；引用须写「康熙《溧水县志》卷之一·邑纪」
@@ -15,6 +15,9 @@ note: >-
   是本站历代大事记的主要依据，全文已核读。邑纪叙曰自称「旧志纪事始于春秋，迄于明万历七年……
   自万历八年以后迨我皇朝，未经纂记者越八十余载，今肆搜采之力，编续前志」，与康熙年间续修相符。
   卷次归属以该数据库题名与正文内容为据，原书卷首题名与刻书年份待见原书后补录。
+  纂修者据书目著录（见 src:gujishuku-lishuixianzhi）：刘登科，奉天（今沈阳）人，举人，
+  康熙十二年知溧水县；程之望为县学训导，谢文运为邑人、顺治进士，王芝藻字荇友、邑人、顺治十一年举人。
+  存本国内极稀少，有日本藏本彩色影印，并收入国家图书馆藏地方志珍本丛刊（见 src:jssdfz-jzzlycb）。
 ---
 
 ## 卷之一·邑纪 条目选录（公有领域，可直接引用）
@@ -42,3 +45,5 @@ note: >-
 - 邑纪的干支纪年与公元年份对应关系由原书给出，引用时两者并录，不自行换算。
 - 「相传李新私于民家，太祖诛之」等语，原书已冠以「相传」，属传闻，引用时必须保留「相传」二字，不得写成史实。
 - 本志记至顺治年间，清代中期以后的内容须改用光绪志或其他来源。
+- 纂修者、卷数、刻书年份均属书目著录，行文中须标明「据书目著录」；有书目将本志误作康熙十五年刻本，
+  该差异只作「书目著录分歧」呈现。

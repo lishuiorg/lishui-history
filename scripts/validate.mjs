@@ -45,10 +45,15 @@ export function run({ repo = REPO, quiet = false } = {}) {
     glossaryTitleCategories: GLOSSARY_TITLE_CATEGORIES,
     quiet,
     extra({ entry, data: d, file: f, sources, byId, enums, err, warn, oneOf }) {
-      /* 年代合理性：正文须说明依据 */
+      /* 年代合理性：置县之前或未来年份须在正文单列一节说明依据。
+         条目普遍已有「## 年代依据」/「## Dating basis」一节，故只在缺该节时告警，
+         否则每条置县前的条目都会重复报同一句，警告失去指示作用。 */
       const start = d.time?.start;
       if (typeof start === 'number' && (start < COUNTY_FOUNDED || start > thisYear)) {
-        warn(f, `年代 ${start} 落在置县（${COUNTY_FOUNDED}）至今的区间之外，正文须说明依据`);
+        const hasGrounds = /^#{2,4}\s*(年代依据|Dating basis|Basis for the date)\s*$/im.test(entry.body);
+        if (!hasGrounds) {
+          warn(f, `年代 ${start} 落在置县（${COUNTY_FOUNDED}）至今的区间之外，正文须有「## 年代依据」一节说明`);
+        }
       }
 
       if (entry.type === 'event') {

@@ -4,7 +4,7 @@ type: event
 lang: en
 site: lishui-history
 title: Lishui County Abolished, Lishui District Established
-subtitle: State Council approval in 2013 ended 1,422 years of county government
+subtitle: State Council approval in 2013 created Lishui District of Nanjing, ending 1,422 years of county government
 summary: In February 2013 the State Council approved the abolition of Lishui County and the establishment of Lishui District of Nanjing, covering the former county's territory. Lishui's county status, held since the Sui dynasty, came to an end.
 time:
   start: 2013

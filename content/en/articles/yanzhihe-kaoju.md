@@ -37,7 +37,7 @@ The Yanzhi River is one of the few Ming works in Lishui with a definite date att
 
 ## The start year: 1393 or 1391
 
-The gazetteer is the most straightforward. The Kangxi edition of the *Lishui County Gazetteer* (卷之一·邑纪) places the cutting of the river under 明洪武二十六年癸酉, that is 1393, and the Jiangsu Provincial Department of Culture and Tourism likewise writes that it was "cut in the twenty-sixth year of the Hongwu era (1393)". The Nanjing Municipal Water Resources Bureau, however, writes "from the twenty-fourth year of the Hongwu era (1391)", two years earlier.
+The gazetteer is the most straightforward. The Kangxi edition of the *Lishui County Gazetteer*, in its first juan, places the cutting of the river under the twenty-sixth year of the Hongwu era, guiyou — that is, 1393 — and the Jiangsu Provincial Department of Culture and Tourism likewise writes that it was "cut in the twenty-sixth year of the Hongwu era (1393)". The Nanjing Municipal Water Resources Bureau, however, writes "from the twenty-fourth year of the Hongwu era (1391)", two years earlier.
 
 Nothing in the available material shows one account displacing the other. One possible explanation is a difference between "begun" and "completed" — the start of work and the through-cutting of the main channel need not fall in the same year — but the water bureau's wording, "from 1391, taking nearly five years", refers on its face to the start, not the completion. Another possibility is that one account describes the survey and preparation and the other the actual cutting, though no source says so. This entry follows the gazetteer, setting `time.start` to 1393 and marking `approx` as `true` to signal that a second date exists.
 

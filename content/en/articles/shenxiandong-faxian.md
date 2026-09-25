@@ -40,8 +40,12 @@ The excavators judged the temporal bone to show "no significant difference from 
 
 The title of that paper presses its conclusion towards "the history of Chinese civilisation should be traced back ten thousand years". That is the authors' argument, not this site's conclusion. This entry adopts only the parts that can be checked: the location of the site, the fact of the human temporal bone and the animal fossils, and the radiocarbon-dated range. Whether the cave counts as a "cultural site", and what the traces of human activity amount to, depends on further archaeological material, and the entry draws no inference.
 
+## Dating basis
+
+The date assigned here precedes the founding of Lishui County in the eleventh year of the Kaihuang era of the Sui (591 CE) by some sixteen centuries, and it is not inferred from documents but given by archaeological and geological research. It rests on three things: the stratigraphy of the cave deposits, assigned by the study to the early Holocene or the early Neolithic; a radiocarbon determination of about 11,000 years ago, from which this entry reckons a date of about 9200 BCE and therefore records `time.start` as -9200; and the character of the fauna in the cave, which belongs to the transition from the Late Pleistocene fauna of southern China to the modern fauna and agrees with that range. The three support one another, but the precision of the absolute date is limited, so the entry uses a precision of "century" and marks the date as approximate rather than giving a single year.
+
 ## Uncertainties
 
 First, the dating is not stated uniformly. The journal gives "about 11,000 years ago"; some aggregator pages write "11,200 ± 1,000 years ago". The two are not contradictory, but the latter is more precise on a less authoritative source, so this entry follows the journal, and `confidence` is set to `medium`.
 
-Second, no `place` entry has been created for the site, so there is no `place_ref` and no coordinates; the exact location and current state of protection await a site visit. The time fields here use a precision of "century" and are marked as approximate, and they fall before the founding of the county — this is one of the entries outside the normal date range, for which the validation script issues a warning rather than blocking. The reasoning is given above.
+Second, no `place` entry has been created for the site, so there is no `place_ref` and no coordinates; the exact location and current state of protection await a site visit.
