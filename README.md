@@ -1,8 +1,8 @@
-# lishui-history · 溧水历史志内容库
+# lishui-history · 溧水历史内容库
 
-溧水知识站群「溧水历史志」分站的内容库。这里存放的是**内容**，站点代码在 `site-lishi`，共享底座在 `lishui-kit`，部署到 `lishi.lishui.org`。
+溧水一方「溧水历史」分站的内容库。这里存放的是**内容**，站点代码在 `site-lishi`，共享底座在 `lishui-kit`，部署到 `lishi.lishui.org`。
 
-分站计划见《溧水历史志分站计划 v1.0》；总体架构、内容模型、双语规则与许可以《溧水知识站群建设规划 v1.3》为准。本库与框架无关：站点用什么生成器都读得动，内容一行都不用改。
+分站计划见《溧水历史分站计划 v1.0》；总体架构、内容模型、双语规则与许可以《溧水一方建设规划 v1.3》为准。本库与框架无关：站点用什么生成器都读得动，内容一行都不用改。
 
 ## 两层结构
 
@@ -21,7 +21,7 @@
 - `place` 古迹——必须有 `place_type` 与 `era`；填 `protection_level` 就必须带 `protection_batch`
 - `article` 文章——必须有 `genre`（沿革 / 考据 / 摘录 / 综述）
 
-人物不单独建条，只在 `related` 里引用人物志的条目 ID。
+人物不单独建条，只在 `related` 里引用人物分站的条目 ID。
 
 `content/` 与 `content/en/` 下的条目**共用同一个 ID**（靠 `lang` 区分语言），英文稿放在对称路径上。`published` 条目必须中英成对，缺任一份则两份都不得发布。
 
@@ -33,7 +33,7 @@ node scripts/validate.mjs          # 输出全部问题
 node scripts/validate.mjs --json   # 输出 JSON，供 CI 使用
 ```
 
-校验引擎在共享底座 `lishui-kit/validate/engine.mjs`，本库只写历史志特有的规则。引擎本身零依赖，但本库要能解析到 `lishui-kit`，所以仍需 `npm install` 一次。
+校验引擎在共享底座 `lishui-kit/validate/engine.mjs`，本库只写历史分站特有的规则。引擎本身零依赖，但本库要能解析到 `lishui-kit`，所以仍需 `npm install` 一次。
 
 **通用六项**（引擎提供，全站群一致）：
 
@@ -44,7 +44,7 @@ node scripts/validate.mjs --json   # 输出 JSON，供 CI 使用
 5. **双语配对**——`published` 条目缺英文稿即阻断；
 6. **专名一致性**——英文稿标题中的专名必须与 `glossary.csv` 一致。
 
-**历史志四项附加**（本库 `scripts/validate.mjs` 以 `extra` 回调注入）：
+**历史四项附加**（本库 `scripts/validate.mjs` 以 `extra` 回调注入）：
 
 1. `event` 必须有完整的 `time` 与 `outcome`，`place_ref` 必须指向存在的地点条目；
 2. `place` 必须有 `place_type` 与 `era`，填了 `protection_level` 就必须带 `protection_batch`，坐标须落在溧水境内；

@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://lishi.lishui.org/schema/base.schema.json",
-  "title": "溧水知识站群基础内容 schema —— 历史志子集",
-  "description": "共享底座基础 schema 在本分站实际用到的字段子集。九类实体中历史志只用 event / place / article 三类，person 仅作为 related 的引用目标出现，不单独建条。本文件是字段契约文档，执行实现见 scripts/validate.mjs；共享底座 lishui-kit 落地后本文件改为对底座的引用。",
+  "title": "溧水一方基础内容 schema —— 历史子集",
+  "description": "共享底座基础 schema 在本分站实际用到的字段子集。九类实体中本分站只用 event / place / article 三类，person 仅作为 related 的引用目标出现，不单独建条。本文件是字段契约文档，执行实现见 scripts/validate.mjs；共享底座 lishui-kit 落地后本文件改为对底座的引用。",
   "type": "object",
   "required": ["id", "type", "lang", "site", "title", "summary", "status", "depth", "sources", "updated"],
   "additionalProperties": false,
@@ -135,7 +135,7 @@
             "lat": { "type": "number", "minimum": 31.0, "maximum": 32.0 },
             "lng": { "type": "number", "minimum": 118.5, "maximum": 119.5 }
           },
-          "description": "WGS84 坐标。历史志只做粗定位，精确到百米即可。"
+          "description": "WGS84 坐标。本分站只做粗定位，精确到百米即可。"
         }
       }
     },

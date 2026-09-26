@@ -32,7 +32,7 @@ jobs:
         working-directory: lishui-history
         run: npm install
 
-      - name: 通用六项 + 历史志四项附加校验
+      - name: 通用六项 + 历史四项附加校验
         working-directory: lishui-history
         run: node scripts/validate.mjs
 

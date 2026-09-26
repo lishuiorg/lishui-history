@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://lishi.lishui.org/schema/history.schema.json",
-  "title": "溧水历史志附加约束",
-  "description": "在基础 schema 之上叠加的历史志特有约束。本文件是契约文档，执行实现见 scripts/validate.mjs。主规划 8.1 节要求的四项附加校验对应本文件中的 time 必填、年代区间、朝代取值、文保批次四条。",
+  "title": "溧水历史附加约束",
+  "description": "在基础 schema 之上叠加的历史分站特有约束。本文件是契约文档，执行实现见 scripts/validate.mjs。主规划 8.1 节要求的四项附加校验对应本文件中的 time 必填、年代区间、朝代取值、文保批次四条。",
   "allOf": [{ "$ref": "base.schema.json" }],
   "constraints": {
     "timeRequired": {
@@ -31,7 +31,7 @@
     "entityScope": {
       "allowed": ["event", "place", "article"],
       "excluded": ["person"],
-      "note": "人物不单独建条，只在 related 中引用人物志的条目 ID。"
+      "note": "人物不单独建条，只在 related 中引用人物分站的条目 ID。"
     },
     "idNaming": {
       "event": "朝代或年号 + 主题，如 ls:event:sui-zhixian-591、ls:event:ming-yanzhihe",

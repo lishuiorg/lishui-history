@@ -1,9 +1,9 @@
 {
-  "$comment": "溧水历史志取值表。内容 front-matter 中的枚举字段只能取本文件列出的值；新增取值必须先改这里，再改校验脚本。共享底座 lishui-kit 落地后，本文件由底座统一维护，各分站只声明自己用到的子集。",
+  "$comment": "溧水历史取值表。内容 front-matter 中的枚举字段只能取本文件列出的值；新增取值必须先改这里，再改校验脚本。共享底座 lishui-kit 落地后，本文件由底座统一维护，各分站只声明自己用到的子集。",
   "site": {
     "id": "lishui-history",
     "host": "lishi.lishui.org",
-    "name": "溧水历史志",
+    "name": "溧水历史",
     "nameEn": "Lishui History",
     "domain": "lishui.org"
   },
