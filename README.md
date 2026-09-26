@@ -1,3 +1,8 @@
+> **本库已归档（只读）。** 内容已全部迁入统一内容库 [`lishui`](https://github.com/lishuiorg/lishui)：
+> 本站条目现位于 `content/lishui-history/` 与 `content/en/lishui-history/`，来源层并入该库的 `sources/`（全局共享，6 例重复已合并）。
+> 本库保留仅供查阅历史，不再更新；校验工作流已随底座变更移除，现行校验在 `lishui` 库内运行。
+> 迁移的理由与取舍见《三层结构集中方案》。
+
 # lishui-history · 溧水历史内容库
 
 溧水一方「溧水历史」分站的内容库。这里存放的是**内容**，站点代码在 `site-lishi`，共享底座在 `lishui-kit`，部署到 `lishi.lishui.org`。
